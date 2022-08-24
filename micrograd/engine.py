@@ -57,11 +57,11 @@ class Value:
         topo = []
         visited = set()
         def build_topo(v):
-            if v not in visited:
-                visited.add(v)
-                for child in v._prev:
+            visited.add(v)
+            for child in v._prev:
+                if child not in visited:
                     build_topo(child)
-                topo.append(v)
+            topo.append(v)
         build_topo(self)
 
         # go one variable at a time and apply the chain rule to get its gradient

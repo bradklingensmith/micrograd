@@ -1,4 +1,16 @@
 
+# demo-min-char-rnn
+
+min-char-rnn comes from this amazing [gist](https://gist.github.com/karpathy/d4dee566867f8291f086) by Andrej Karpathy. He recently shared a [YouTube video](https://www.youtube.com/watch?v=VMj-3S1tku0) detailing [micrograd](https://github.com/karpathy/micrograd).
+
+The two projects were just begging to come together, so here it is: [min-char-rnn implemented with the micrograd backend](demo-min-char-rnn.ipynb).
+
+Some highlights:
+* A minimal character RNN (of course) that learns to write the micrograd engine
+* A simple-as-possible AdamW optimizer implementation
+* A softmax-cross-entropy loss function implementation
+* A demo of combining an entire neuron into a single micrograd operation to dramatically improve performance.
+
 # micrograd
 
 ![awww](puppy.jpg)
